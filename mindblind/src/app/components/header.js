@@ -1,11 +1,11 @@
 
 export default function Header() {
     return (
-      <div className="bg-white flex justify-between text-black border-black border py-10 border-2"> 
-        <div >
-        <p>Hola hola chino japones</p>
+      <div className="bg-white flex justify-between text-black border-black py-10 px-2 text-sm border-2"> 
+        <div className="text-wrap w-20" >
+        <p>jsdjkflkljasdfasdfsadfasdf </p>
         </div>
-        <div>
+        <div className="hidden md:block">
          <p>24:30</p>
         </div>
         <div>

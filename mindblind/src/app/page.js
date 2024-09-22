@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div className="bg-white flex flex-col w-svw h-svh justify-between">
       <Header></Header>
-      <div className="mb-56">
+      <div className="mb-72 md:mb-0">
         <Logoframe></Logoframe>
         <div className="flex justify-center items-center text-black p-10 lg:text-6xl">
           <p>PRÓXIMAMENTE</p>
