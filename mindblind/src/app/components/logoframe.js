@@ -1,14 +1,40 @@
+"use client";
+
 import Image from "next/image";
-export default function Header() {
-    return (
-      <div className="flex justify-center bg-white text-black border-black border-2"> 
-        <div><Image
-        src="/foto mindblind3.jpg"
-        width={"300"}
-        height={"300"}
-        alt="No carga we"
-        />
-        </div>
-      </div>
-    );
+import { useEffect, useState } from "react";
+
+export default function logoframe({ images }) {
+
+  const [count, setCount] = useState(0);
+  useEffect(() => {
+    const counterInterval = setInterval(() => {
+      setCount((prevCount) => (prevCount + 1) % images.length);
+    }, 300);
+    return () => clearInterval(counterInterval);
+  }, []);
+
+  const backgroundImageStyle = {
+    backgroundImage: "url(/windows.png)",
+    width: "300px",
+    height: "300px",
+     backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
   }
+
+  return (
+   
+    <div style={backgroundImageStyle} className="flex justify-center text-black">
+      <div>
+        <Image
+          src={images[count]}
+          width={"100"}
+          height={"100"}
+          alt="No carga we"
+        />
+      </div>
+    </div>
+  );
+}
