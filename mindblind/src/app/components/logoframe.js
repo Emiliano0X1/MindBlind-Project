@@ -30,8 +30,8 @@ export default function logoframe({ images }) {
       <div>
         <Image
           src={images[count]}
-          width={"100"}
-          height={"100"}
+          width={"200"}
+          height={"200"}
           alt="No carga we"
         />
       </div>
