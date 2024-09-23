@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily:{
+        stick : ['var(--font-stick)']
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
