@@ -1,4 +1,4 @@
-import { Stick , Raleway} from 'next/font/google'
+import { Stick , Raleway , Lobster , Rubik_Glitch, Great_Vibes} from 'next/font/google'
  
 export const stick = Stick({
   subsets: ['latin'],
@@ -12,5 +12,26 @@ export const raleway = Raleway({
   display: 'swap',
   weight: '400',
   variable: '--font-raleway',
+})
+
+export const lobster = Lobster({
+  subsets: ['latin'],
+  display: 'swap',
+  weight: '400',
+  variable: '--font-lobster',
+})
+
+export const rubik_glitch = Rubik_Glitch({
+  subsets: ['latin'],
+  display: 'swap',
+  weight: '400',
+  variable: '--font-rubik-glitch',
+})
+
+export const great_vibes = Great_Vibes({
+  subsets: ['latin'],
+  display: 'swap',
+  weight: '400',
+  variable: '--font-great-vibes',
 })
  
