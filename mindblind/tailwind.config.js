@@ -1,3 +1,4 @@
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -7,6 +8,13 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily:{
+        stick : ['var(--font-stick)'],
+        raleway : ['var(--font-raleway)'],
+        lobster : ['var(--font-lobster)'],
+        rubik_glitch : ['var(--font-rubik-glitch)'],
+        great_vibes : ['var(--font-great-vibes)'],
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
