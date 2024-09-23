@@ -2,6 +2,7 @@ import Image from "next/image";
 import Header from "./components/header";
 import Footer from "./components/footer";
 import Logoframe from "./components/logoframe";
+import { stick } from "./fonts/fontsChilas/mainFonts";
 
 const images = ["/foto mindblind3.jpg", "/mindBlind.jpg", "/windows.png", "/background.jpg"];
 
@@ -12,7 +13,7 @@ export default function Home() {
       <div className="flex flex-col items-center mb-72">
         <Logoframe max={images.length - 1} images={images}></Logoframe>
         <div className="flex justify-center items-center text-black p-10 lg:text-6xl">
-          <p>PRÓXIMAMENTE</p>
+          <h1>PRÓXIMAMENTE</h1>
         </div>
       </div>
       {/* <Footer></Footer> */}
