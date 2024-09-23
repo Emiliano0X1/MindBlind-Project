@@ -11,10 +11,35 @@ const geistMono = localFont({
   variable: "--font-geist-mono",
   weight: "100 900",
 });
-const w95 = localFont({
-  src : "./fonts/._w95fa.woff",
-  variable : "--font-w95",
-  weight : "100 900",
+
+const window = localFont({
+  src : "./fonts/Windows95.woff",
+  weight : "400",
+  variable : "--font-windows-regular",
+});
+
+const disneyHeroic = localFont({
+  src : "./fonts/DisneyHeroic.woff",
+  weight : "400",
+  variable : "--font-disney-heroic",
+})
+
+const katakana = localFont ({
+  src : "./fonts/katakana.woff",
+  weight : "400",
+  variable : "--font-katakana",
+})
+
+const winbroken = localFont ({
+  src : "./fonts/winbroken.woff",
+  weight : "400",
+  variable : "--font-winbroken",
+})
+
+const punk = localFont ({
+  src : "./fonts/punk.woff",
+  weight : "400",
+  variable : "--font-punk",
 })
 
 export const metadata = {
@@ -26,7 +51,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${w95.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${window.variable} ${disneyHeroic.variable} ${katakana.variable} ${winbroken.variable} ${punk.variable} antialiased`}
       >
         {children}
       </body>

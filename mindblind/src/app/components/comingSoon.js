@@ -10,10 +10,10 @@ export default function Proximamente({ fonts }) {
     useEffect(() => {
         const interval = setInterval(() => {
             setCont((prevCont) => (prevCont + 1) % fonts.length);
-        }, 500);
+        }, 250);
         console.log('Current font:', fonts[cont]);
         return () => clearInterval(interval);
-    },[fonts]);
+    },[]);
     
     return (
         <div className='flex justify-center items-center'>

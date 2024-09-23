@@ -1,4 +1,5 @@
 import { Stick , Raleway , Lobster , Rubik_Glitch, Great_Vibes} from 'next/font/google'
+import localFont from "next/font/local";
  
 export const stick = Stick({
   subsets: ['latin'],
@@ -34,4 +35,6 @@ export const great_vibes = Great_Vibes({
   weight: '400',
   variable: '--font-great-vibes',
 })
+
+
  

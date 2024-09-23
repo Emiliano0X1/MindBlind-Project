@@ -10,7 +10,7 @@ export default function Header() {
           className="flex justify-between text-black py-10 px-2 text-sm"
         >
           <div className="text-wrap w-20">
-            <p className="font-">Espera lo mejor</p>
+            <p className="font-punk">Espera lo mejor NIGGA</p>
           </div>
           <div className="hidden md:block">
             <p>.</p>

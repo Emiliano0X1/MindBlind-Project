@@ -7,7 +7,7 @@ import Proximamente from "./components/comingSoon";
 
 const images = ["/foto mindblind3.jpg", "/mindBlind.jpg", "/windows.png", "/background.jpg"];
 
-const fonts = ["stick","raleway","lobster","rubik_glitch","great_vibes"];
+const fonts = ["windows_regular","disney_heroic","katakana","winbroken","punk"];
 
 export default function Home() {
   return (
@@ -15,7 +15,7 @@ export default function Home() {
       <Header></Header>
       <div className="flex flex-col items-center mb-72">
         <Logoframe max={images.length - 1} images={images}></Logoframe>
-        <div className="flex justify-center items-center text-black p-10 lg:text-6xl">
+        <div className={`${stick.variable} ${raleway.variable} ${lobster.variable} ${rubik_glitch.variable} ${great_vibes.variable}flex justify-center items-center text-black p-10 lg:text-6xl`}>
         <Proximamente fonts={fonts}></Proximamente>
         </div>
       </div>
