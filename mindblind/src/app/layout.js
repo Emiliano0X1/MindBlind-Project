@@ -11,6 +11,11 @@ const geistMono = localFont({
   variable: "--font-geist-mono",
   weight: "100 900",
 });
+const w95 = localFont({
+  src : "./fonts/._w95fa.woff",
+  variable : "--font-w95",
+  weight : "100 900",
+})
 
 export const metadata = {
   title: "MindBlind",
@@ -21,7 +26,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${w95.variable} antialiased`}
       >
         {children}
       </body>
