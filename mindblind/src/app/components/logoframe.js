@@ -9,14 +9,14 @@ export default function logoframe({ images }) {
   useEffect(() => {
     const counterInterval = setInterval(() => {
       setCount((prevCount) => (prevCount + 1) % images.length);
-    }, 300);
+    }, 100000);
     return () => clearInterval(counterInterval);
   }, []);
 
   const backgroundImageStyle = {
     backgroundImage: "url(/windows.png)",
-    width: "300px",
-    height: "300px",
+    width: "400px",
+    height: "400px",
      backgroundSize: 'cover',
     backgroundPosition: 'center',
     display: 'flex',
@@ -26,12 +26,12 @@ export default function logoframe({ images }) {
 
   return (
    
-    <div style={backgroundImageStyle} className="flex justify-center text-black">
-      <div>
+    <div style={backgroundImageStyle} className="flex h-full w-full align-middle justify-center text-black">
+      <div classname="flex justifiy-center">
         <Image
-          src={images[count]}
-          width={"200"}
-          height={"200"}
+          src={images[5]}
+          width={"300"}
+          height={"300"}
           alt="No carga we"
         />
       </div>
