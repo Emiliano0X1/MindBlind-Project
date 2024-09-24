@@ -6,7 +6,7 @@ export default function Header() {
     
     <>
     <div className="flex flex-col justify-between">
-     <div className="flex p-5 ">
+     <div className="flex p-5  ">
      <div style={{ background: "linear-gradient(to right, #1978f8, #0053f1)"}} className="h-full w-1 rounded-sm"></div>
       <div className="w-full">
       <div style={{ background: "linear-gradient(#0053f1, #1978f8)"}} className="h-2 rounded-sm"></div>
@@ -21,7 +21,7 @@ export default function Header() {
           <Proximamente fonts={fonts}></Proximamente>
           </div>
           <div>
-            <a href="https://www.instagram.com/mindblindstudios/" className="text-xl font-windows_regular md:text-xl hover:text-4xl transition-all">Siguenos en Instagram</a>
+            <a href="https://www.instagram.com/mindblindstudios/" className=" text-xl font-windows_regular md:text-xl md:hover:text-4xl transition-all">Siguenos en Instagram</a>
           </div>
         </div> 
         <div style={{ background: "linear-gradient(#1978f8, #0053f1)"}} className="h-1 rounded-sm"></div>
