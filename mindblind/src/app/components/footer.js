@@ -12,13 +12,16 @@ export default function Footer() {
           className="flex justify-between text-black py-4 px-2 text-sm"
         >
           <div className="text-wrap w-20">
-            <p>. </p>
+            <p className="font-windows_regular">. </p>
+            <p className="font-katakana">.</p>
           </div>
           <div className="hidden md:block">
-            <p>.</p>
+            <p className="font-dezire">.</p>
+            <p className="font-winbroken">.</p>
           </div>
           <div>
-            <p>.</p>
+            <p className="font-punk">.</p>
+            <p className="font-disney_heroic">.</p>
           </div>
         </div> 
         <div style={{ background: "linear-gradient(#1978f8, #0053f1)"}} className="h-1"></div>

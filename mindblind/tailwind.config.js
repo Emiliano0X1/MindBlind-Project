@@ -19,6 +19,13 @@ module.exports = {
         katakana : ['var(--font-katakana)'],
         winbroken : ['var(--font-winbroken)'],
         punk : ['var(--font-punk)'],
+        dezire : ['var(--font-dezire)'],
+        franchise : ['var(--font-franchise)'],
+        hatolie : ['var(--font-hatolie)'],
+        parklane : ['var(--font-parkline)'],
+        retroPower : ['var(--font-retropower)'],
+        shortPlan : ['var(--font-shortplan)'],
+        takoyaki : ['var(--font-takoyaki)'],
       },
       colors: {
         background: "var(--background)",

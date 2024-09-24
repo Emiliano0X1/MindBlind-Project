@@ -1,7 +1,7 @@
 import Proximamente from "./comingSoon";
 
 export default function Header() {
-  const fonts = ["windows_regular","disney_heroic","katakana","winbroken","punk"];
+  const fonts = ["windows_regular","disney_heroic","katakana","winbroken","punk","dezire"];
   return (
     
     <>
