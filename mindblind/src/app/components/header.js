@@ -7,16 +7,16 @@ export default function Header() {
       <div style={{ background: "linear-gradient(#0053f1, #1978f8)"}} className="h-2 rounded-sm"></div>
         <div
           style={{ backgroundColor: "#ece9d8" }}
-          className="flex justify-between text-black py-10 px-2 text-sm"
+          className="flex justify-between text-black py-8 px-3 text-sm"
         >
           <div className="text-wrap w-20">
-            <p className="font-punk">Espera lo mejor NIGGA</p>
+            <p className="font-windows_regular">Espera lo mejor </p>
           </div>
           <div className="hidden md:block">
             <p>.</p>
           </div>
           <div>
-            <p>.</p>
+            <p className="font-windows_regular">Siguenos en Instagram</p>
           </div>
         </div> 
         <div style={{ background: "linear-gradient(#1978f8, #0053f1)"}} className="h-1 rounded-sm"></div>
