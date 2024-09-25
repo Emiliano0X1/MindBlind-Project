@@ -15,24 +15,23 @@ export default function logoframe({ images }) {
 
   const backgroundImageStyle = {
     backgroundImage: "url(/windows.png)",
-    width: "400px",
-    height: "400px",
-     backgroundSize: 'cover',
+    backgroundSize: 'cover',
     backgroundPosition: 'center',
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
+
   }
 
   return (
    
-    <div style={backgroundImageStyle} className="flex h-full w-full align-middle justify-center text-black">
-      <div classname="flex justifiy-center">
+    <div style={backgroundImageStyle} className="bg-cover bg-center w-[300px] h-[300px] md:w-[400px] md:h-[400px] flex align-middle justify-center text-black">
+      <div classname=" flex justifiy-center">
         <Image
           src={images[5]}
-          width={"300"}
-          height={"300"}
-          alt="No carga we"
+          width={300}
+          height={300}
+          alt="No carga"
         />
       </div>
     </div>
