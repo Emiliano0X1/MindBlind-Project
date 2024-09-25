@@ -15,7 +15,7 @@ export default function Proximamente({ fonts }) {
 
   return (
     <div className="flex justify-center items-center">
-      <h1 className={`font-${fonts[cont]}`}> COMING SOON </h1>
+      <h1 className={`font-${fonts[cont]}`}>Coming soon</h1>
     </div>
   );
 }

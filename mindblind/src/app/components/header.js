@@ -33,8 +33,8 @@ export default function Header() {
               className="flex justify-between text-black py-8 px-3 text-sm"
             >
               <div className="">
-                <p className="hidden md:block text-sm md:text-2xl font-windows_regular">
-                  MINDBLIND STUDIOS TM{" "}
+                <p className="mr-12 hidden md:block text-sm md:text-2xl w-28 text-nowrap font-windows_regular">
+                  MINDBLIND STUDIOS {" "}
                 </p>
               </div>
               <div className="text-xl w-50 md:w-80 md:text-2xl align-middle">

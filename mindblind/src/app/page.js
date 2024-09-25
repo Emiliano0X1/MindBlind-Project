@@ -11,7 +11,7 @@ const fonts = ["windows_regular","disney_heroic","katakana","winbroken","punk"];
 
 export default function Home() {
   return (
-    <div className="bg-cyan-500 bg-[url('/clouds.jpg')] bg-repeat  md:bg-[url('/clouds.jpg')] md:bg-repeat flex flex-col w-svw h-svh justify-between">
+    <div className="bg-cyan-500 bg-[url('/clouds.jpg')] bg-repeat md:bg-[url('/clouds.jpg')] md:bg-repeat flex flex-col w-svw h-svh justify-between">
       <Header></Header>
       <div className="flex flex-col items-center mb-72">
         <Logoframe max={images.length - 1} images={images}></Logoframe>
