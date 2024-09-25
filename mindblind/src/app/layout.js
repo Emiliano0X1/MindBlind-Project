@@ -45,9 +45,9 @@ const punk = localFont ({
 //Fonts parte 2
 
 const dezire = localFont({
-  src : "./fonts/dezire-stacked.woff",
+  src : "./fonts/dezire.woff",
   weight : "400",
-  variable : "--font-dezire-stacked",
+  variable : "--font-dezire",
 })
 
 const franchise = localFont ({
@@ -62,12 +62,6 @@ const hatolie = localFont ({
   variable : "--font-hatolie",
 })
 
-const parklane = localFont ({
-  src : "./fonts/parklane.woff",
-  weight : "400",
-  variable : "--font-parklane",
-})
-
 const retroPower = localFont({
   src : "./fonts/RETROPOWER.woff",
   weight : "400",
@@ -80,11 +74,7 @@ const shortplan = localFont ({
   variable : "--font-shortplan",
 })
 
-const takoyaki = localFont ({
-  src : "./fonts/TAKOYAKI.woff",
-  weight : "400",
-  variable : "--font-takoyaki",
-})
+
 
 
 
@@ -97,7 +87,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${window.variable} ${disneyHeroic.variable} ${katakana.variable} ${winbroken.variable} ${punk.variable} ${dezire.variable} ${franchise.variable} ${hatolie.variable} ${parklane.variable} ${retroPower.variable} ${shortplan.variable} ${takoyaki.variable}antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${window.variable} ${disneyHeroic.variable} ${katakana.variable} ${winbroken.variable} ${punk.variable} ${dezire.variable} ${franchise.variable} ${hatolie.variable} ${retroPower.variable} ${shortplan.variable} antialiased`}
       >
         {children}
       </body>
