@@ -42,6 +42,47 @@ const punk = localFont ({
   variable : "--font-punk",
 })
 
+//Fonts parte 2
+
+const dezire = localFont({
+  src : "./fonts/dezire.woff",
+  weight : "400",
+  variable : "--font-dezire",
+})
+
+const franchise = localFont ({
+  src : "./fonts/franchise.woff",
+  weight : "400",
+  variable : "--font-franchise",
+})
+
+const hatolie = localFont ({
+  src : "./fonts/hatolie.woff",
+  weight : "400",
+  variable : "--font-hatolie",
+})
+
+const retroPower = localFont({
+  src : "./fonts/RETROPOWER.woff",
+  weight : "400",
+  variable : "--font-retropower",
+})
+
+const shortplan = localFont ({
+  src : "./fonts/shortplan.woff",
+  weight : "400",
+  variable : "--font-shortplan",
+})
+
+const korean = localFont({
+  src : "./fonts/korean.woff",
+  weight : "400",
+  variable : "--font-korean",
+})
+
+
+
+
 export const metadata = {
   title: "MindBlind",
   description: "Wait for the best",
@@ -51,7 +92,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${window.variable} ${disneyHeroic.variable} ${katakana.variable} ${winbroken.variable} ${punk.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${window.variable} ${disneyHeroic.variable} ${katakana.variable} ${winbroken.variable} ${punk.variable} ${dezire.variable} ${franchise.variable} ${hatolie.variable} ${retroPower.variable} ${shortplan.variable} ${korean.variable} antialiased`}
       >
         {children}
       </body>
