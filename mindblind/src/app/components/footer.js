@@ -25,6 +25,7 @@ export default function Footer() {
             <p className="font-franchise">.</p>
             <p className="font-disney_heroic">.</p>
             <p className="font-retroPower">.</p>
+            <p className="font-korean">.</p>
           </div>
         </div> 
         <div style={{ background: "linear-gradient(#1978f8, #0053f1)"}} className="h-1"></div>

@@ -74,6 +74,11 @@ const shortplan = localFont ({
   variable : "--font-shortplan",
 })
 
+const korean = localFont({
+  src : "./fonts/korean.woff",
+  weight : "400",
+  variable : "--font-korean",
+})
 
 
 
@@ -87,7 +92,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${window.variable} ${disneyHeroic.variable} ${katakana.variable} ${winbroken.variable} ${punk.variable} ${dezire.variable} ${franchise.variable} ${hatolie.variable} ${retroPower.variable} ${shortplan.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${window.variable} ${disneyHeroic.variable} ${katakana.variable} ${winbroken.variable} ${punk.variable} ${dezire.variable} ${franchise.variable} ${hatolie.variable} ${retroPower.variable} ${shortplan.variable} ${korean.variable} antialiased`}
       >
         {children}
       </body>

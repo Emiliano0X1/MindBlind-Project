@@ -10,7 +10,7 @@ export default function Proximamente({ fonts }) {
     useEffect(() => {
         const interval = setInterval(() => {
             setCont((prevCont) => (prevCont + 1) % fonts.length);
-        }, 100);
+        }, 150);
         console.log('Current font:', fonts[cont]);
         return () => clearInterval(interval);
     },[]);

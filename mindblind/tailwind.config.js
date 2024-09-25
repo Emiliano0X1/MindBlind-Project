@@ -26,6 +26,7 @@ module.exports = {
         retroPower : ['var(--font-retropower)'],
         shortPlan : ['var(--font-shortplan)'],
         takoyaki : ['var(--font-takoyaki)'],
+        korean : ['var(--font-korean)'],
       },
       colors: {
         background: "var(--background)",
