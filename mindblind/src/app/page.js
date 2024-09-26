@@ -11,12 +11,15 @@ const fonts = ["windows_regular","disney_heroic","katakana","winbroken","punk"];
 
 export default function Home() {
   return (
-    <div className="bg-cyan-500 bg-[url('/clouds.jpg')] bg-repeat md:bg-[url('/clouds.jpg')] md:bg-repeat flex flex-col w-svw h-svh justify-between">
+    <div className="bg-cyan-500 bg-[url('/clouds.jpg')] bg-repeat md:bg-[url('/clouds.jpg')] md:bg-repeat flex flex-col w-svw h-svh md:justify-between">
       <Header></Header>
-      <div className="flex flex-col items-center mb-72">
+      <div className="flex flex-col items-center mt-12 md:mt-0">
         <Logoframe max={images.length - 1} images={images}></Logoframe>
         <div className={`${stick.variable} ${raleway.variable} ${lobster.variable} ${rubik_glitch.variable} ${great_vibes.variable}flex justify-center items-center text-black p-10 lg:text-6xl`}>
         </div>
+      </div>
+      <div>
+
       </div>
       {/* <Footer></Footer> */}
     </div>
