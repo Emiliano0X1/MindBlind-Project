@@ -19,7 +19,7 @@ export default function Footer() {
           </div>
           <div className="hidden md:block">
             <p className="font-dezire">.</p>
-            <p className="font-winbroken">.</p>
+            <p className="font-winbroken">..</p>
           </div>
           <div>
             <p className="font-franchise">.</p>
