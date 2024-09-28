@@ -4,7 +4,7 @@ import Footer from "./components/footer";
 import Logoframe from "./components/logoframe";
 import Proximamente from "./components/comingSoon";
 
-const images = ["/foto mindblind3.jpg", "/mindBlind.jpg", "/windows.png", "/background.jpg", "/mindblindLogo.png", "/mindblindLogoShade.png"];
+const images = ["/foto mindblind3.jpg", "/mindBlind.jpg", "/windows.png", "/background.jpg", "/mindblindLogo.png", "/mindblindlogoShade.png"];
 
 const fonts = ["windows_regular","disney_heroic","katakana","winbroken","punk"];
 
