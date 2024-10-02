@@ -48,9 +48,9 @@ export default function Header() {
                 >
                   Siguenos en Instagram
                 </a>
-                <div className="hidden">
+                <div className="flex">
                 <Image
-                className="bg-cover bg-center relative -inset-2 w-[20px] h-[20px] md:w-[30px] md:h-[30px] lg:w-[50px] lg:h-[50px] "
+                className=" hidden bg-cover bg-center relative -inset-2 w-[20px] h-[20px] md:w-[30px] md:h-[30px] lg:w-[40px] lg:h-[40px] transition-all"
                 src={"/instaPixel.png"}
                 width={30}
                 height={30}
