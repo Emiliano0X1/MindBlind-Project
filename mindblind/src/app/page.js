@@ -3,7 +3,7 @@ import Header from "./components/header";
 import Footer from "./components/footer";
 import Logoframe from "./components/logoframe";
 import Proximamente from "./components/comingSoon";
-import DayEvent from "./components/Date";
+
 
 const images = ["/mindblindlogoShade.png", "/logoFourShade.png" , "/logoSixShade.png", "/logoThreeShade.png","/logoFiveShade.png"];
 
