@@ -25,7 +25,6 @@ export default function Home() {
       <div className="flex flex-col items-center mt-12 md:mt-0">
         <Logoframe images={images}></Logoframe>
         <div className="flex justify-center items-center text-black p-10 lg:text-6xl md: text-xl">
-          <DayEvent fonts={fonts}></DayEvent>
         </div>
       
       </div>
