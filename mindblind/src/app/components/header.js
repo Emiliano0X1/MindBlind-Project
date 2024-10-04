@@ -50,7 +50,7 @@ export default function Header() {
                 </a>
                 <div className="flex">
                 <Image
-                className=" hidden bg-cover bg-center relative -inset-2 w-[20px] h-[20px] md:w-[30px] md:h-[30px] lg:w-[40px] lg:h-[40px] transition-all"
+                className=" bg-cover bg-center relative -inset-2 w-[20px] h-[20px] md:w-[30px] md:h-[30px] lg:w-[40px] lg:h-[40px] transition-all"
                 src={"/instaPixel.png"}
                 width={30}
                 height={30}

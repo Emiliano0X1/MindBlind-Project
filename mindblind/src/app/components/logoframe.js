@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion"
 
-export default function logoframe({ images }) {
+export default function logoframe({ images , time }) {
 
   const [count, setCount] = useState(0);
   const[opening,setOpening] = useState(0);
@@ -12,7 +12,7 @@ export default function logoframe({ images }) {
   useEffect(() => {
     const openingInterval = setInterval(() => {
       setOpening((prevOpening) => !prevOpening)
-    },3000)
+    },time)
 
     return () => clearInterval(openingInterval)
   },[]);
