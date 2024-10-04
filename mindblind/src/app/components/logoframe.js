@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion"
 
-export default function logoframe({ images , time }) {
+export default function logoframe({ images }) {
 
   const [count, setCount] = useState(0);
   const[opening,setOpening] = useState(0);
@@ -12,7 +12,7 @@ export default function logoframe({ images , time }) {
   useEffect(() => {
     const openingInterval = setInterval(() => {
       setOpening((prevOpening) => !prevOpening)
-    },time)
+    },2000)
 
     return () => clearInterval(openingInterval)
   },[]);
@@ -59,7 +59,7 @@ export default function logoframe({ images , time }) {
           alt="No carga"
         />
       </div>
-      
+
     </motion.div>
   );
 }
