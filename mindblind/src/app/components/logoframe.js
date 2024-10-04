@@ -59,6 +59,7 @@ export default function logoframe({ images , time }) {
           alt="No carga"
         />
       </div>
+      
     </motion.div>
   );
 }
