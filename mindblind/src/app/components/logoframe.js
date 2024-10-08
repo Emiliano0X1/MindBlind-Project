@@ -7,15 +7,36 @@ import { motion } from "framer-motion"
 export default function logoframe({ images }) {
 
   const [count, setCount] = useState(0);
-  const[opening,setOpening] = useState(0);
+  const[opening,setOpening] = useState(false);
+  const[isVisible, setVisible] = useState(false);
 
   useEffect(() => {
+
+    const showAnnimations = () => {
+
+        setOpening(true);
+        setVisible(true); //Este es el que sirve para poder cambiar el estado de la animacion
+
+        setTimeout(() => {
+          setOpening(false); //Es para la animacion de salida
+
+          setTimeout(() => {
+            setVisible(false); 
+          }, 500);
+
+        } , 7000);
+
+    };
+
+    showAnnimations();
+ 
     const openingInterval = setInterval(() => {
-      setOpening((prevOpening) => !prevOpening)
-    },2000)
+      showAnnimations();
+    },9000)
 
     return () => clearInterval(openingInterval)
   },[]);
+
 
 
   useEffect(() => {
@@ -36,10 +57,8 @@ export default function logoframe({ images }) {
   }
 
   return (
-
-
-   
-    <motion.div 
+    <>
+   {isVisible && (<motion.div 
       style={backgroundImageStyle} 
       className="bg-cover bg-center w-[300px] h-[300px] md:w-[400px] md:h-[400px] lg:w-[500px] lg:h-[500px] flex align-middle justify-center text-black"
       initial = {{opacity : 0, scale:0.5}}
@@ -61,5 +80,9 @@ export default function logoframe({ images }) {
       </div>
 
     </motion.div>
+
+   )}
+
+   </>
   );
 }
