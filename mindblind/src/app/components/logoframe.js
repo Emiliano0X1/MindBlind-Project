@@ -10,6 +10,10 @@ export default function logoframe({ images }) {
   const[opening,setOpening] = useState(false);
   const[isVisible, setVisible] = useState(false);
 
+  const getRandomPosition= () => {
+
+  }
+
   useEffect(() => {
 
     const showAnnimations = () => {
@@ -59,7 +63,6 @@ export default function logoframe({ images }) {
   return (
     <>
    {isVisible && (<motion.div 
-      style={backgroundImageStyle} 
       className="bg-cover bg-center w-[300px] h-[300px] md:w-[400px] md:h-[400px] lg:w-[500px] lg:h-[500px] flex align-middle justify-center text-black"
       initial = {{opacity : 0, scale:0.5}}
       animate = {{
@@ -73,8 +76,8 @@ export default function logoframe({ images }) {
       <div className=" flex justifiy-center">
         <Image
           src={images[count]}
-          width={500}
-          height={500}
+          width={600}
+          height={600}
           alt="No carga"
         />
       </div>

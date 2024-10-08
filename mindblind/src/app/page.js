@@ -5,7 +5,7 @@ import Logoframe from "./components/logoframe";
 import Proximamente from "./components/comingSoon";
 
 
-const images = ["/mindblindlogoShade.png", "/logoFourShade.png" , "/logoSixShade.png", "/logoThreeShade.png","/logoFiveShade.png"];
+const images = ["/logoZeroShade.png", "/logoFourShade.png" , "/logoSixShade.png", "/logoThreeShade.png","/logoFiveShade.png"];
 
 const fonts = [
   "windows_regular",
@@ -20,7 +20,7 @@ const fonts = [
 
 export default function Home() {
   return (
-    <div className="bg-cyan-500 bg-[url('/clouds.jpg')] bg-repeat md:bg-[url('/clouds.jpg')] bg-fixed bg-center flex flex-col w-svw h-svh md:justify-between">
+    <div className="bg-cyan-500 bg-[url('/newBG.jpg')] bg-fixed bg-center flex flex-col w-svw h-svh md:justify-between">
       <Header></Header>
       <div className="flex flex-col items-center mt-12 md:mt-0">
         <Logoframe images={images}></Logoframe>
