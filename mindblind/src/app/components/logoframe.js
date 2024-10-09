@@ -62,6 +62,7 @@ export default function logoframe({ images }) {
 
   return (
     <>
+    <div className="bg-cover bg-center w-[300px] h-[300px] md:w-[400px] md:h-[400px] lg:w-[500px] lg:h-[500px] flex align-middle justify-center text-black">
    {isVisible && (<motion.div 
       className="bg-cover bg-center w-[300px] h-[300px] md:w-[400px] md:h-[400px] lg:w-[500px] lg:h-[500px] flex align-middle justify-center text-black"
       initial = {{opacity : 0, scale:0.5}}
@@ -84,8 +85,14 @@ export default function logoframe({ images }) {
 
     </motion.div>
 
+    
+
    )}
 
+</div>
+
    </>
+
+   
   );
 }

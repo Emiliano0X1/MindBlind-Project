@@ -20,7 +20,7 @@ const fonts = [
 
 export default function Home() {
   return (
-    <div className="bg-cyan-500 bg-[url('/newBG.jpg')] bg-fixed bg-center flex flex-col w-svw h-svh md:justify-between">
+    <div className="bg-cyan-500 bg-[url('/newBG.jpg')]  bg-cover flex flex-col w-screen h-screen md:justify-between">
       <Header></Header>
       <div className="flex flex-col items-center mt-12 md:mt-0">
         <Logoframe images={images}></Logoframe>
@@ -32,8 +32,6 @@ export default function Home() {
       <div>
 
       </div>
-      {/* <Footer></Footer> */}
     </div>
-
   );
 }
