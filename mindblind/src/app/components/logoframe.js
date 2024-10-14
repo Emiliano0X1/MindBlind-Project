@@ -46,7 +46,7 @@ export default function logoframe({ images }) {
   useEffect(() => {
     const counterInterval = setInterval(() => {
       setCount((prevCount) => (prevCount + 1) % images.length);
-    }, 200);
+    }, 500);
     return () => clearInterval(counterInterval);
   }, []);
 
@@ -62,9 +62,9 @@ export default function logoframe({ images }) {
 
   return (
     <>
-    <div className="bg-cover bg-center w-[300px] h-[300px] md:w-[400px] md:h-[400px] lg:w-[500px] lg:h-[500px] flex align-middle justify-center text-black">
+    <div className="bg-cover bg-center w-[300px] h-[300px] md:w-[400px] md:h-[400px] lg:w-[600px] lg:h-[600px] flex align-middle justify-center text-black">
    {isVisible && (<motion.div 
-      className="bg-cover bg-center w-[300px] h-[300px] md:w-[400px] md:h-[400px] lg:w-[500px] lg:h-[500px] flex align-middle justify-center text-black"
+      className="bg-cover bg-center w-[300px] h-[300px] md:w-[400px] md:h-[400px] lg:w-[600px] lg:h-[600px] flex align-middle justify-center text-black"
       initial = {{opacity : 0, scale:0.5}}
       animate = {{
         opacity: opening ? 1 : 0,
