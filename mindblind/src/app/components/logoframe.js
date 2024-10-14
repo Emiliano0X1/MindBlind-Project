@@ -63,16 +63,9 @@ export default function logoframe({ images }) {
   return (
     <>
     <div className="bg-cover bg-center w-[300px] h-[300px] md:w-[400px] md:h-[400px] lg:w-[600px] lg:h-[600px] flex align-middle justify-center text-black">
-   {isVisible && (<motion.div 
+      <div 
       className="bg-cover bg-center w-[300px] h-[300px] md:w-[400px] md:h-[400px] lg:w-[600px] lg:h-[600px] flex align-middle justify-center text-black"
-      initial = {{opacity : 0, scale:0.5}}
-      animate = {{
-        opacity: opening ? 1 : 0,
-        scale : opening ? 1 : 0.5,
-      }}
-
-      transition={{ duration : 0.5 , ease : 'easeInOut'}}
-
+      
         >
       <div className=" flex justifiy-center">
         <Image
@@ -83,11 +76,7 @@ export default function logoframe({ images }) {
         />
       </div>
 
-    </motion.div>
-
-    
-
-   )}
+    </div>
 
 </div>
 
